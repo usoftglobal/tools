@@ -1,0 +1,6 @@
+#!name=局域网直连补丁
+#!desc=强制 .local 域名和局域网 IP 直连，解决托管配置无法访问本地服务的问题。
+
+[Rule]
+# 优先让 .local 走直连
+DOMAIN-SUFFIX,local,DIRECT
