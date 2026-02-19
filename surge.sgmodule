@@ -1,11 +1,7 @@
 #!name=局域网直连补丁
-#!desc=强制 .local 域名和局域网 IP 直连，解决托管配置无法访问本地服务的问题。
+#!desc=强制 .local 域名和局域网 IP 直连，解决托管配置无法访问本地服务的问题。#DOMAIN-SUFFIX,local,DIRECT
 
 [Rule]
-#DOMAIN-SUFFIX,local,DIRECT
-#IP-CIDR,172.20.10.0/28,DIRECT
-#IP-CIDR,192.168.0.0/16,DIRECT
-#IP-CIDR,10.0.0.0/8,DIRECT
 
 [General]
 skip-proxy = 192.168.0.0/16, 10.0.0.0/8, 172.16.0.0/12, 172.20.10.0/28, localhost,
